@@ -1,0 +1,37 @@
+<div class="logo-home">
+    <a class="navbar-brand"><img routerLink="/home" alt="" src="../../../assets/media/Logo-home.png"></a>
+</div>
+<section class="banner">
+    
+
+        <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+
+            <div ngxSlickItem class="slide">
+                <div style="background: url('../../../assets/media/banner/1920x904.png');background-size: cover;background-position: center; height: 100vh;">
+                <div class="content">
+                    <div class="container position-relative">
+                        <h1><span class="color-primary text-uppercase">Members Only</span><small>All August</small>BUY 1 GET 1</h1>
+                        <p class="mt-15em">
+                        <a routerLink="/products-list" class="cus-btn mt-2 btn-large btn-primary text-uppercase">Shop Now</a>                       
+                    </p>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div ngxSlickItem class="slide">
+                <div style="background: url('../../../assets/media/banner/1080x1920.PNG');background-size: cover;background-position: center; height: 100vh;">
+                <div class="content">
+                    <div class="container position-relative">
+                        <h1><span class="color-primary text-uppercase">CLEARANCE SALE</span><small>LAST WEEK</small>UP TO 50% OFF</h1>
+                        <p class="mt-15em">
+                        <a routerLink="/products-list" class="cus-btn mt-2 btn-large btn-primary text-uppercase">Shop Now</a>
+                        </p>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+        </ngx-slick-carousel>   
+        
+</section>

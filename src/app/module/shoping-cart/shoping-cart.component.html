@@ -1,0 +1,181 @@
+<section class="cart sec-mar">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <table class="table cart-items text-center">
+          <tbody>
+            <tr>
+              <td class="remove-sec"><button class="remove"><i class="fa fa-times"></i></button></td>
+              <td class="product text-start">
+                <div class="product-image">
+                  <img src="./assets/media/products/100x101.png" alt="">
+                </div>
+                <div class="content">
+                  <a href="product-detail.html">
+                    <h5>Cohiba</h5>
+                  </a>
+                  <ul class="list-unstyled">
+                    <li><span>by</span> &nbsp; SMOK</li>
+
+                  </ul>
+                  <p class="code pt-0"><span>SKU:</span> &nbsp; S20010905</p>
+                </div>
+              </td>
+              <td class="space"></td>
+              <td class="price-sec text-end">
+                <p class="heading">Price</p>
+                <p class="price">$10.00</p>
+              </td>
+              <td class="quantity-sec">
+                <p class="text-center heading">Quantity</p>
+                <div class="quantity quantity-wrap">
+                  <input class="decrement" type="button" value="-">
+                  <input type="text" name="quantity" value="1" maxlength="2" size="1" class="number">
+                  <input class="increment" type="button" value="+">
+                </div>
+              </td>
+              <td class="total-sec text-end pe-4">
+                <p class="heading">Sub Total</p>
+                <p class="sub-total">$30.00</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="remove-sec"><button class="remove"><i class="fa fa-times"></i></button></td>
+              <td class="product text-start">
+                <div class="product-image">
+                  <img src="./assets/media/products/100x101.png" alt="">
+                </div>
+                <div class="content">
+                  <a href="product-detail.html">
+                    <h5>Montecristo</h5>
+                  </a>
+                  <ul class="list-unstyled">
+                    <li><span>by</span> &nbsp; SMOK</li>
+
+                  </ul>
+                  <p class="code pt-0"><span>SKU:</span> &nbsp; S20010905</p>
+                </div>
+              </td>
+              <td class="space"></td>
+              <td class="price-sec text-end">
+                <p class="heading">Price</p>
+                <p class="price">$10.00</p>
+              </td>
+              <td class="quantity-sec">
+                <p class="text-center heading">Quantity</p>
+                <div class="quantity quantity-wrap">
+                  <input class="decrement" type="button" value="-">
+                  <input type="text" name="quantity" value="1" maxlength="2" size="1" class="number">
+                  <input class="increment" type="button" value="+">
+                </div>
+              </td>
+              <td class="total-sec text-end pe-4">
+                <p class="heading">Sub Total</p>
+                <p class="sub-total">$30.00</p>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <h2>Choose Delivery Method:</h2>
+              </td>
+              <td colspan="4">
+                <table class="delivery-methods">
+                  <tr>
+                    <td>
+                      <div class="delivery-box">
+                        <b>Basic&nbsp; &nbsp; &nbsp;</b> <span class="float-end">3-4 Days</span>
+                        <p class="text-end">$05.00</p>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="delivery-box">
+                        <b>Standard&nbsp; &nbsp; &nbsp;</b> <span class="float-end">2 Days</span>
+                        <p class="text-end">$10.00</p>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="delivery-box active">
+                        <b>Premium&nbsp; &nbsp; &nbsp;</b> <span class="float-end">4-6 Hours</span>
+                        <p class="text-end">$20.00</p>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="6">
+                <table class="table checkout-box-xl">
+                  <tr>
+                    <td class="left-content text-start">
+                      <p>Tax:</p>
+                      <p>Voucher:<span><input type="text" name="voucher-code" class="form-control"
+                            placeholder="Enter Voucher Code here"></span></p>
+                      <p>Discount:</p>
+                      <p class="total">Total Amount:</p>
+                    </td>
+                    <td class="right-content text-end">
+                      <p>$03.00</p>
+                      <p>$00.00</p>
+                      <p>$00.00</p>
+                      <p class="total">$73.00</p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="mt-50 text-center">
+              <a (click)="onPlaceOrder()" class="cus-btn btn-primary">Place Order</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="mt-50 text-end set-icon-size">
+              <a routerLink="/cart-list/change-age"><i class="fa fa-cog" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content">
+      <div class="modal-header m-header">
+        <h5 class="modal-title mx-auto" id="exampleModalLabel">Restricted Item</h5>
+      </div>
+      <div class="modal-body text-center">
+        <img src="../../../assets/media/unnamed.png">
+      </div>
+      <div class="modal-footer justify-content-center">
+        <button type="button" class="btn btn-primary">Verify Age</button><br />
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- <button routerLink="/change-age"><i>setting-icon</i></button> -->

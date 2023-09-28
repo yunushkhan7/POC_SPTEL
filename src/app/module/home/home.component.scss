@@ -1,0 +1,27 @@
+
+.slick-prev:before, .slick-next:before{
+    color: red;
+    z-index: 66666666;
+}
+
+::ng-deep .slick-next {
+    right: 25px !important;
+}
+
+::ng-deep .slick-prev {
+    left: 0px !important;
+}
+
+.mt-15em{
+    margin-top: 15em;
+}
+
+
+.logo-home{
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    left: auto;
+    width: 100%;
+    top: 200px;
+}

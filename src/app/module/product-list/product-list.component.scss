@@ -1,0 +1,47 @@
+.prod-list-slider{
+.container {
+    max-width: 100%;
+    padding-top: 10px;
+    padding-left: 180px;
+    padding-right: 180px;
+
+
+    
+::ng-deep .slick-prev:before, ::ng-deep .slick-next:before {
+    font-family: 'Font Awesome 5 Pro';
+    font-size: 170px;
+    line-height: 1;
+    opacity: 1;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+::ng-deep .slick-prev:before {
+    content: "\f104";
+}
+
+::ng-deep .slick-next:before {
+    content: "\f105";
+}
+
+::ng-deep .slick-next {
+    right: -100px !important;
+}
+
+::ng-deep .slick-prev {
+    left: -100px !important;
+}
+
+
+
+::ng-deep .slick-prev, ::ng-deep .slick-next {
+    height: 200px;
+    width: 80px;
+}
+}
+
+
+
+
+}

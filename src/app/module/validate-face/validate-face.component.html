@@ -1,0 +1,61 @@
+<div class="verify_popup" *ngIf="step == 1">
+  <div class="m-header">
+  <h5>Restricted Item</h5>
+</div>
+  <div class="icon_design">
+    <img src="../../../assets/media/unnamed.png">
+  </div>
+  <div class="verify_age">
+    <p class="mt-4">
+      You must be at least <strong>21</strong> years old to purchase this product
+    </p>
+  </div>
+
+  <div class="verifyage-btn">
+  <div class="mt-50">
+    <button (click)="verifyAge()" class="cus-btn btn-primary text-center w-50">Verify Age</button>
+</div>
+
+<div class="mt-30">
+    <button (click)="goToHome()" class="cus-btn btn-white text-uppercase w-50">Cancel</button>
+</div>
+</div>
+
+</div>
+
+<!-- <div class="content2" *ngIf="step == 1">
+  You must be 21 years old to purchase this product.
+  <button (click)="verifyAge()"><a>Verify Age</a></button>
+  <button><a (click)="close()">Close</a></button>
+</div> -->
+<div class="content2" *ngIf="step == 2">
+
+  <div class="m-header">
+    <h5>Verifying Age…</h5>
+  </div>
+
+  <div class="">
+    <app-camera></app-camera>
+  </div>
+
+  <div class="verifyage-footer">
+    <table>
+      <tr>
+        <td>
+          <i class="far fa-sun"></i>
+          <h6>Find a light area</h6>
+        </td>
+        <td>
+          <i class="fas fa-graduation-cap"></i>
+          <h6>Remove any headwear</h6>
+        </td>
+        <td>
+          <i class="fas fa-glasses"></i>
+          <h6>Keep your glasses on</h6>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- <app-camera (pictureTaken)="handleImage($event)"></app-camera> -->
+</div>
